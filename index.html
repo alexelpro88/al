@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Cajas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contenedor {
+            background-color: black;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 80%;
+            height: auto;
+        }
+
+        .caja {
+            background-color: yellow;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .interior {
+            background-color: blue;
+            padding: 10px;
+        }
+
+        .linea {
+            background-color: rgb(47, 193, 47);
+            height: 20px;
+            margin: 5px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .centro {
+            background-color: red;
+            height: 10px; /* Ajusta la altura para que sea más pequeño */
+            width: 50%; /* Cambia el ancho para que sea más pequeño que el verde */
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            color: white;
+            font-size: 16px;
+        }
+
+        /* Unir las dos últimas cajas sin margen */
+        .caja.unida {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        /* Estilo para el nombre en la primera caja */
+        .nombre {
+            text-align: center;
+            font-size: 18px;
+            color: black;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="caja">
+            <div class="interior">
+                <div class="linea">
+                    <div class="centro">
+                        <span>Alan Yupanqui</span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="caja unida">
+            <div class="interior">
+                <div class="linea">
+                    <div class="centro">
+                        <span>Alan Yupanqui</span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="caja unida">
+            <div class="interior">
+                <div class="linea">
+                    <div class="centro">
+                        <span>Alan Yupanqui</span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
